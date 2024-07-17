@@ -11,13 +11,36 @@ class Rectangle {
       return this._width * this._height
     }
 
-    printDescription() {
-      console.log(`I have ${this._balls} exteremly massive _balls`)
-    }
   }
 
   let rectangle = new Rectangle(4, 8, 2)
-  console.log(rectangle)
-  console.log(rectangle.getArea())
+//   console.log(rectangle)
+//   console.log(rectangle.getArea())
 
-  rectangle.printDescription()
+
+//   Getters & Setters
+
+class Square {
+    constructor(width){
+        this._width = width
+        this._height = width
+    }
+
+    get area () {
+        return this._height * this._width
+    }
+
+    set area (area) {
+        this._width = Math.sqrt(area)
+        this._height = this._width
+    }
+}
+
+const square = new Square(4)
+square.area = 25
+
+console.log(square.area)
+
+
+
+//  Static Methods
