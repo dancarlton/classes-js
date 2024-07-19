@@ -1,4 +1,4 @@
-// Basic
+// //                                       Basic
 
 // class Rectangle {
 //     constructor(_width, _height, _balls) {
@@ -17,7 +17,7 @@
 // //   console.log(rectangle)
 // //   console.log(rectangle.getArea())
 
-// //   Getters & Setters
+// //                                 Getters & Setters
 
 // class Square {
 //     constructor(width){
@@ -40,19 +40,44 @@
 
 // console.log(square.area)
 
-//  Static Methods
-class Square {
-  constructor(width) {
-    this._width = width
-    this._height = width
+// //                                 Static Methods
+
+// class Square {
+//   constructor(width) {
+//     this._width = width
+//     this._height = width
+//   }
+
+//   static equals(a, b) {
+//     return a._width * a._height === b._width * b._height
+//   }
+// }
+
+// const square = new Square(8)
+// const squaredUpFoo = new Square(8)
+
+// console.log(Square.equals(square, squaredUpFoo))
+
+
+// //                                 Inheritance & Extends
+
+// Parent & Child Classes
+
+class Person {
+  constructor(name, age){
+    this._name = name,
+    this._age = age
   }
 
-  static equals(a, b) {
-    return a._width * a._height === b._width * b._height
+  describe() {
+    console.log(`I am ${this._name} and I am ${this._age} years old.`)
   }
 }
 
-const square = new Square(8)
-const squaredUpFoo = new Square(8)
+class Programmer extends Person {
 
-console.log(Square.equals(square, squaredUpFoo))
+}
+
+ function developSoftware(programmers){
+  // Develop software
+}
